@@ -6,26 +6,35 @@
     <meta name="description" content="Home page for my online portfolio">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>About Me</title>
-    <!--UI Kit cdn-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.7/dist/css/uikit.min.css"/>
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.7/dist/js/uikit.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.7/dist/js/uikit-icons.min.js"></script>
     <!--Style Sheets Here-->
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="output.css">
     <!--JavaScript here-->
     <script src="about.js"></script>
 </head>
 <body>
-    <div class="uk-container">
-        <h1>About Me</h1>
-        <div class="uk-text-center" uk-grid>
-            <div class="uk-width-auto">
-                <img data-src="../assets/descanso.jpg" width="257px" height="259px" alt="Profile picture" uk-img>
-                <p> I'm a fourth year student at UCI, currently pursuing my B.S. in Informatics with an emphasis on Human-Computer Interaction. 
-                    Based in Orange, California, I spend my time enjoying the various foods and trendy,
-                    aesthetic spots Southern California has to offer. 
-                </p>
-            </div>
-        </div>
+  <nav class="flex items-center justify-between flex-wrap bg-red-600 p-6">
+    <div class="block lg:hidden">
+      <button class="flex items-center px-3 py-2 border rounded text-white-200 border-white-400 hover:text-green-500 hover:border-green-500">
+        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+      </button>
     </div>
+    <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+      <div class="text-sm lg:flex-grow">
+        <a href="../projects/projects_home.html" class="block mt-4 lg:inline-block lg:mt-0 text-lg text-red-200 hover:text-white mr-4 focus:text-black">
+          Projects
+        </a>
+        <a href="../about/about.html" class="block mt-4 lg:inline-block lg:mt-0 text-lg text-red-200 hover:text-white focus:text-black underline">
+          About Me
+        </a>
+    </div>
+    <div>
+      <a href="#" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-red-500 hover:bg-white mt-4 lg:mt-0">Resume</a>
+      <a href="#" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-red-500 hover:bg-white mt-4 lg:mt-0">Contact</a>
+    </div>
+  </nav>
+  <div class="p-10">
+    <h1 class="text-4xl">Hello, welcome!</h1>
+    <p class="mt-3">I'm an aspiring UX designer studying at the UCI.</p>
+    <p>Currently, I'm looking for user experience design or research internships in Orange County.</p>
+  </div>
 </body>
